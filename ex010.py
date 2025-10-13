@@ -6,4 +6,4 @@ valorEuro: float = 6.41
 
 dinheiro = float(input("Quanto dinheiro você tem na carteira? R$"))
 
-print(f"Com {dinheiro:.2f} você pode comprar US${dinheiro/valorDolar:.2f} ou €{dinheiro/valorEuro:.2f}.")
+print(f"Com R${dinheiro:.2f} você pode comprar US${dinheiro/valorDolar:.2f} ou €{dinheiro/valorEuro:.2f}.")
