@@ -1,6 +1,6 @@
 # Conversor de moedas
 
-valorDolar: float = 5.53
+valorDolar: float = 5.53 # no dia 12/10/2025
 
 dinheiro = float(input("Quanto dinheiro você tem na carteira? R$"))
 
