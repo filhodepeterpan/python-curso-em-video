@@ -1,7 +1,9 @@
 # Conversor de moedas
 
-valorDolar: float = 5.53 # no dia 12/10/2025
+# Cotações do dia 12/10/2025
+valorDolar: float = 5.53
+valorEuro: float = 6.41
 
 dinheiro = float(input("Quanto dinheiro você tem na carteira? R$"))
 
-print(f"Com {dinheiro} você pode comprar US${dinheiro/valorDolar:.2f}.")
+print(f"Com {dinheiro:.2f} você pode comprar US${dinheiro/valorDolar:.2f} ou €{dinheiro/valorEuro:.2f}.")
