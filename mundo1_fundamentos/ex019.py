@@ -8,5 +8,5 @@ alunos.append(input("Segundo aluno: "))
 alunos.append(input("Terceiro aluno: "))
 alunos.append(input("Quarto aluno: "))
 
-print(f"Alunos participantes: {alunos}\n"
+print(f"Alunos participantes: {', '.join(alunos)}\n"
       f"O aluno sorteado foi: {choice(alunos)}\n")
