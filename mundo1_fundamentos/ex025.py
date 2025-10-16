@@ -3,7 +3,7 @@
 nome = str(input("Digite seu nome completo: "))
 nome = nome.lower().strip()
 
-temSilva = "silva" in nome
+temSilva : bool = "silva" in nome
 resposta = "SIM" if temSilva else "Não..."
 
 print(f"Tem Silva no nome? {resposta}")
