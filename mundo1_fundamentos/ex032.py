@@ -9,4 +9,4 @@ if anoCentenario and ano % 400 == 0:
 elif not anoCentenario and ano % 4 == 0:
     anoBissexto = True
 
-print(f"O ano {ano} é {'bissexto' if anoBissexto else 'comum'}.")
+print(f"O ano {ano} {'é' if anoBissexto else 'não é'} bissexto.")
