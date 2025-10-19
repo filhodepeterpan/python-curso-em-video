@@ -7,7 +7,7 @@ emprestimo_liberado: bool = False
 
 prestacao_mensal : float = valor_casa / (anos_financiamento * 12)
 
-if prestacao_mensal <= (salario_comprador * 0.30):
+if prestacao_mensal <= (salario_comprador * 0.3):
     emprestimo_liberado = True
 
 print(f"Para pagar uma casa no valor de R$ {valor_casa:.2f} em {anos_financiamento} anos de financiamento, a prestação mensal será de R$ {prestacao_mensal:.2f}.\n"
