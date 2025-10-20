@@ -1,7 +1,7 @@
 # Conversor de Bases Numéricas
 
 num = int(input("Digite um número inteiro: "))
-resultado : str = ""
+resultado = ""
 tipo_conversao : str = ""
 
 print("Escolha uma das bases para conversão:\n"
