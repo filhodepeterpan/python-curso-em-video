@@ -31,4 +31,4 @@ while True:
     except ValueError:
         print("\nDigite apenas números. Escolha 1, 2 ou 3.")
 
-print(f"\n{num} em {tipo_conversao} é {resultado}.")
+print(f"\n{num} em {tipo_conversao} é {resultado[2:]}.")
