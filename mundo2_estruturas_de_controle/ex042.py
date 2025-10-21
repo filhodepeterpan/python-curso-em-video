@@ -16,7 +16,7 @@ while True:
         if triangulo:
             if segmentos[0] == segmentos[1] and segmentos[1] == segmentos[2]:
                 tipo_triangulo = "EQUILÁTERO"
-            if segmentos[0] != segmentos[1] and segmentos[1] != segmentos[2]:
+            elif segmentos[0] != segmentos[1] and segmentos[1] != segmentos[2]:
                 tipo_triangulo = "ESCALENO"
             else:
                 tipo_triangulo = "ISÓSCELES"
