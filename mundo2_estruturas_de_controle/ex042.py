@@ -2,21 +2,21 @@
 
 while True:
     try:
-        numeros: list[float] = []
+        segmentos: list[float] = []
         triangulo: bool = False
         tipo_triangulo: str = ""
 
         for i in range(1, 4):
-            numeros.append(int(input(f"Digite o {i}º segmento: ")))
+            segmentos.append(int(input(f"Digite o {i}º segmento: ")))
 
-        numeros.sort()
+        segmentos.sort()
 
-        triangulo = (numeros[0] + numeros[1]) > numeros[2]
+        triangulo = (segmentos[0] + segmentos[1]) > segmentos[2]
 
         if triangulo:
-            if numeros[0] == numeros[1] and numeros[1] == numeros[2]:
+            if segmentos[0] == segmentos[1] and segmentos[1] == segmentos[2]:
                 tipo_triangulo = "EQUILÁTERO"
-            if numeros[0] != numeros[1] and numeros[1] != numeros[2]:
+            if segmentos[0] != segmentos[1] and segmentos[1] != segmentos[2]:
                 tipo_triangulo = "ESCALENO"
             else:
                 tipo_triangulo = "ISÓSCELES"
