@@ -2,7 +2,7 @@
 
 while True:
     try:
-        numeros: list[int] = []
+        numeros: list[float] = []
         triangulo: bool = False
         tipo_triangulo: str = ""
 
