@@ -7,7 +7,7 @@ while True:
         tipo_triangulo: str = ""
 
         for i in range(1, 4):
-            segmentos.append(int(input(f"Digite o {i}º segmento: ")))
+            segmentos.append(float(input(f"Digite o {i}º segmento: ")))
 
         segmentos.sort()
 
