@@ -19,7 +19,7 @@ while True:
         else:
             classificacao = "OBESIDADE MÓRBIDA"
 
-        print(f"Seu IMC é de {imc} e sua classificação é: {classificacao}.")
+        print(f"Seu IMC é de {imc:.2f} e sua classificação é: {classificacao}.")
 
         break
     except ValueError:
