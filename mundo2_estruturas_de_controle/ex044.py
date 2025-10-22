@@ -30,11 +30,13 @@ while True:
                 juros = 20
                 valor_total = valor_compras + (valor_compras * (juros / 100))
 
-            print(f"\nValor da compra: R$ {valor_compras:.2f}\n"
+            print(f"{'*'*40}"
+                  f"\nValor da compra: R$ {valor_compras:.2f}\n"
                   f"Forma de pagamento: {forma_pagamento}\n"
                   f"Porcentagem de desconto: {desconto}%\n"
                   f"Porcentagem de juros: {juros}%\n"
-                  f"VALOR TOTAL: R$ {valor_total:.2f}\n")
+                  f"VALOR TOTAL: R$ {valor_total:.2f}\n"
+                  f"{'*'*40}")
             break
         else:
             print("\nOpção válida. Digite um número entre 1 e 4.\n")
