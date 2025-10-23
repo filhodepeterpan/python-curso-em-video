@@ -21,14 +21,13 @@ while True:
             if opcao == 1 or opcao == 2:
                 forma_pagamento = "À vista (dinheiro/cheque)" if opcao == 1 else "À vista (cartão)"
                 desconto = 10 if opcao == 1 else 5
-                valor_total = valor_compras - (valor_compras * (desconto / 100))
             elif opcao == 3:
                 forma_pagamento = "2x no cartão"
-                valor_total = valor_compras
             else:
                 forma_pagamento = "3x ou mais no cartão"
                 juros = 20
-                valor_total = valor_compras + (valor_compras * (juros / 100))
+
+            valor_total = valor_compras - (valor_compras * desconto / 100) + (valor_compras * juros / 100)
 
             print(f"{'*'*40}"
                   f"\nValor da compra: R$ {valor_compras:.2f}\n"
