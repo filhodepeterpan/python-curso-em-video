@@ -39,6 +39,6 @@ while True:
                   f"{'*'*40}")
             break
         else:
-            print("\nOpção válida. Digite um número entre 1 e 4.\n")
+            print("\nOpção inválida. Digite um número entre 1 e 4.\n")
     except ValueError:
         print("\nOpção inválida. Tente novamente.")
