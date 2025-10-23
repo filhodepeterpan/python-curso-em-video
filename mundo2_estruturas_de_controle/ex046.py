@@ -8,4 +8,4 @@ for n in range(10, 0, -1):
     print(f"{n}...")
     sleep(1)
 
-print("ESTOUROU!")
+print("ESTOUROU! 🎆")
