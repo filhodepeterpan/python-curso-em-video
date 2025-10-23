@@ -29,7 +29,7 @@ while True:
 
             valor_total = valor_compras - (valor_compras * desconto / 100) + (valor_compras * juros / 100)
 
-            print(f"{'*'*40}"
+            print(f"\n{'*'*40}"
                   f"\nValor da compra: R$ {valor_compras:.2f}\n"
                   f"Forma de pagamento: {forma_pagamento}\n"
                   f"Porcentagem de desconto: {desconto}%\n"
