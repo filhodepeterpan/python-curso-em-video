@@ -1,5 +1,8 @@
 # Números primos
 
+print(f"{'=-' * 20}")
+print("IDENTIFICADOR DE NÚMEROS PRIMOS")
+print(f"{'=-' * 20}\n")
 while True:
     try:
         num = int(input("Digite um número inteiro: "))
