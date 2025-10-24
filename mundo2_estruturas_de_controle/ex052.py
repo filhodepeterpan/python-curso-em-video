@@ -1,8 +1,8 @@
 # Números primos
 
-print(f"{'=-' * 20}")
+print(f"{'=-' * 16}")
 print("IDENTIFICADOR DE NÚMEROS PRIMOS")
-print(f"{'=-' * 20}\n")
+print(f"{'=-' * 16}\n")
 while True:
     try:
         num = int(input("Digite um número inteiro: "))
