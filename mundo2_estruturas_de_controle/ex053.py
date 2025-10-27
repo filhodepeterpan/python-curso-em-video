@@ -7,8 +7,9 @@ while True:
         break
     print("\nA frase pode conter apenas letras!\n")
 
-frase = frase.strip().upper().replace(" ", "")
+frase = frase.strip().upper()
 fraseInvertida = frase[::-1]
+palindromo = frase.replace(" ", "") == fraseInvertida.replace(" ", "")
 
 print(f"\nO inverso de '{frase}' é '{fraseInvertida}'")
-print(f"A frase digitada {'é' if fraseInvertida == frase else 'não é'} um palíndromo.")
+print(f"A frase digitada {'é' if palindromo else 'não é'} um palíndromo.")
