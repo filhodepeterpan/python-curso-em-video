@@ -5,6 +5,9 @@ ano_atual : int = date.today().year
 idade_maioridade : int = 18
 adultos : int = 0
 qt_pessoas : int = 7
+cor_padrao: str = "\033[0m"
+cor_vermelho: str = "\033[31m"
+cor_verde: str = "\033[32m"
 
 while True:
     try:
@@ -17,5 +20,5 @@ while True:
     except ValueError:
         print("\nVocê digitou um ano inválido. Tente novamente.")
 
-print(f"\nMaiores de idade: {adultos}\n" 
-      f"Menores de idade: {qt_pessoas - adultos}\n")
+print(f"\n{cor_verde}Maiores de idade:{cor_padrao} {adultos}\n" 
+      f"{cor_vermelho}Menores de idade:{cor_padrao} {qt_pessoas - adultos}\n")
