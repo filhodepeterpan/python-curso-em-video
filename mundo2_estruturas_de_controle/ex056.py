@@ -25,7 +25,7 @@ for i in range (0, qt_pessoas):
 
 media_idades : float = sum(p["idade"] for p in dados) / qt_pessoas
 mulheres_menores_20 : int = 0
-homem_mais_velho : str = "não há"
+homem_mais_velho : str = "" if 'M' in [p["genero"] for p in dados] else "não há"
 idade_homem_mais_velho : int = 0
 
 print(f"\n===== TABELA DE DADOS =====\n"
