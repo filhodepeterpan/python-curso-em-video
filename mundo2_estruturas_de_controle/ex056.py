@@ -4,7 +4,7 @@
 
 from typing import List, Dict
 
-qt_pessoas : int = 4
+qt_pessoas = int(input("Quantas pessoas você gostaria de analisar? "))
 dados: List[Dict[str, str | int]] = []
 
 for i in range (0, qt_pessoas):
@@ -25,7 +25,7 @@ for i in range (0, qt_pessoas):
 
 media_idades : float = sum(p["idade"] for p in dados) / qt_pessoas
 mulheres_menores_20 : int = 0
-homem_mais_velho : str = ""
+homem_mais_velho : str = "não há"
 idade_homem_mais_velho : int = 0
 
 print(f"\n===== TABELA DE DADOS =====\n"
@@ -44,6 +44,6 @@ for p in dados:
     print(f"{p["nome"]:<10} | {p["idade"]:<5} | {p["genero"]:<6}")
 
 print(f"\n===== ANÁLISE DE DADOS =====\n"
-      f"Média de idade: {media_idades:.1f}.\n"
-      f"Homem mais velho: {homem_mais_velho}\n"
+      f"Média de idade: {media_idades:.1f}\n"
+      f"Homem mais velho: {homem_mais_velho}.\n"
       f"Mulheres com menos de 20: {mulheres_menores_20}\n ")
