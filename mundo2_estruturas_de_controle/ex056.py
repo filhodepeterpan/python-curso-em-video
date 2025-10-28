@@ -2,8 +2,10 @@
 
 # ENUNCIADO: Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre: a média de idade do grupo, qual é o nome do homem mais velho e quantas mulheres têm menos de 20 anos.
 
+from typing import List, Dict
+
 qt_pessoas : int = 4
-dados : list = []
+dados: List[Dict[str, str | int]] = []
 
 for i in range (0, qt_pessoas):
 
