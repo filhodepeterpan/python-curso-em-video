@@ -22,8 +22,8 @@ for i in range (0, qt_pessoas):
         "sexo": sexo,
     })
 
-media_idade : float = sum(p["idade"] for p in dados) / qt_pessoas
-qt_mulheres_menores_20 : int = 0
+media_idades : float = sum(p["idade"] for p in dados) / qt_pessoas
+mulheres_menores_20 : int = 0
 homem_mais_velho : str = ""
 idade_homem_mais_velho : int = 0
 
@@ -35,8 +35,8 @@ for p in dados:
 
     if p["sexo"] == "F":
         if p["idade"] < 20:
-            qt_mulheres_menores_20 += 1
+            mulheres_menores_20 += 1
 
-print(f"\nMédia de idade: {media_idade:.1f}.\n"
+print(f"\nMédia de idade: {media_idades:.1f}.\n"
       f"Homem mais velho: {homem_mais_velho}\n"
-      f"Mulheres com menos de 20: {qt_mulheres_menores_20}\n ")
+      f"Mulheres com menos de 20: {mulheres_menores_20}\n ")
