@@ -12,5 +12,5 @@ for i in range(0, qt_pessoas):
     if peso > mais_pesado : mais_pesado = peso
     if peso < menos_pesado: menos_pesado = peso
 
-print(f"\nAMaior peso: {mais_pesado:.2f}kg.\n"
-      f"Menor peso: {menos_pesado:.2f}kg.")
+print(f"\nAMaior peso: {mais_pesado:.1f}kg.\n"
+      f"Menor peso: {menos_pesado:.1f}kg.")
