@@ -29,11 +29,14 @@ while opcao != 5:
 
             if 5 >= opcao >= 1:
                 if opcao == 1:
-                    print(f"A soma dos valores é {x + y}.")
+                    print(f"\nA soma dos valores é {x + y}.")
                 if opcao == 2:
-                    print(f"A multiplicação dos valores é {x * y}.")
+                    print(f"\nA multiplicação dos valores é {x * y}.")
                 if opcao == 3:
-                    print(f"O maior valor é {x if x > y else y}.")
+                    if x != y:
+                        print(f"\nO maior valor é {x if x > y else y}.")
+                    else:
+                        print("\nOs valores são iguais.")
                 if opcao == 4:
                     x, y = pega_valores()
                 break
