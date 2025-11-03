@@ -5,9 +5,9 @@ opcao : int = 0
 def pega_valores():
     while True:
         try:
-            x = float(input("\nDigite o valor de x: "))
-            y = float(input("Digite o valor de y: "))
-            return x, y
+            a = float(input("\nDigite o valor de x: "))
+            b = float(input("Digite o valor de y: "))
+            return a, b
 
         except ValueError:
             print("\nValor inválido. Tente novamente.")
