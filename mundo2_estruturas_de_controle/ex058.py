@@ -1,7 +1,7 @@
 # Jogo da Adivinhação v2.0
 
 from random import randint
-from time import sleep
+
 
 numAleatorio: int = randint(0, 10)
 chute : int | None = None
