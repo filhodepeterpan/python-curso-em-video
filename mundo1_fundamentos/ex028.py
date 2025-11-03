@@ -1,4 +1,4 @@
-# Jogo da Advinhação v.1.0
+# Jogo da Adivinhação v1.0
 from random import randint
 from time import sleep
 
